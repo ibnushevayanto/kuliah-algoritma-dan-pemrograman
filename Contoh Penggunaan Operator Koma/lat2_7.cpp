@@ -6,3 +6,4 @@ main()
  printf ("%c\n",kar1);
  printf ("%c\n",kar2);
 }
+
