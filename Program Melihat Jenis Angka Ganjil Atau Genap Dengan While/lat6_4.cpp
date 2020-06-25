@@ -1,25 +1,38 @@
 #include<stdio.h>
+#include<ctype.h>
+
 main()
 {
- int n=1, maximumNumber;
+    int n=1, maximumNumber;
+    bool start = true;
+    char questionStartApplication;
  
- printf("Masukkan Maximum Angka : ");
- scanf("%d", &maximumNumber);
+    do {
+ 	
+        printf("Masukkan Maximum Angka : ");
+        scanf("%d", &maximumNumber);
  
- printf("\n========== Hasil ==========\n\n");
+        printf("\n========== Hasil ==========\n\n");
  
- printf("Genap : ");
+        printf("Genap : ");
  
- do{
- 	if(n % 2 == 0 ) printf("%d ", n);
- }while(n++ < maximumNumber);
+        do{
+ 	        if(n % 2 == 0 ) printf("%d ", n);
+        }while(n++ < maximumNumber);
  
- n = 1;
+        n = 1;
  
- printf("\n");
- printf("Ganjil : ");
+        printf("\n");
+        printf("Ganjil : ");
  
- do{
- 	if(n % 2 != 0 ) printf("%d ", n);
- }while(n++ < maximumNumber);
+        do{
+ 	        if(n % 2 != 0 ) printf("%d ", n);
+        }while(n++ < maximumNumber);
+		
+		printf("\n");
+        printf("\nApakah Anda Ingin Keluar [y/n] ? ");
+        scanf(" %c", &questionStartApplication);
+		printf("\n\n");
+
+    }while(tolower(questionStartApplication) == 'y');
 }
