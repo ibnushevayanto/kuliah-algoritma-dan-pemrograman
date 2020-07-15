@@ -20,11 +20,14 @@ main()
 	int jumlah_data;
 	bool run_app = true;
 	
-	Profile data[100];
+	cout<< "Iput Maximal Data : "; cin>>jumlah_data; endLine();
+	
+	Profile data[jumlah_data + 1];
 	
 	int index = 0;
 	
 	do{
+		cin.getline(data[index].nama, 99);
 		cout<< "Masukkan Nama Siswa: "; cin.getline(data[index].nama, 99); endLine();
 		cout<< "Masukkan Alamat Siswa: "; cin.getline(data[index].alamat, 249); endLine();
 		cout<< "Masukkan No Telepon Siswa: "; cin.getline(data[index].no_telepon, 14); endLine();
