@@ -45,7 +45,7 @@ int main()
     cout<<" 1. Masukan Data"; newLine();
     cout<<" 2. Simpan Data"; newLine();
     cout<<" 3. Baca Data"; newLine();
-    cout<<" 4. Tampilkan Data Terkini"; newLine();
+    cout<<" 4. Tampilkan Data Asal"; newLine();
     cout<<" 5. Urutkan Data Secara Menaik"; newLine();
     cout<<" 6. Tampilkan Data Terurut"; newLine();
     cout<<" 7. Keluar"; newLine();
