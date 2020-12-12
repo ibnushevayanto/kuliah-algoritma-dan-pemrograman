@@ -26,7 +26,13 @@ int main()
 {
     std::array<int, lengthArray> arrayAngka = {3, 2, 4, 1, 6, 5, 7, 10, 9, 8};
 
-    std::array<char, lengthArray> arrayHuruf = {'i', 'h', 'a', 'h', 'p', 'm', 'd', 'z', 'r', 's'};
+    std::array<char, lengthArray> arrayHuruf = {'i', 'h', 'a', 'c', 'p', 'm', 'd', 'z', 'r', 's'};
+
+    printArray(arrayAngka);
+    printArray(arrayHuruf);
+
+    std::sort(arrayAngka.begin(), arrayAngka.end());
+    std::sort(arrayHuruf.begin(), arrayHuruf.end());
 
     printArray(arrayAngka);
     printArray(arrayHuruf);
