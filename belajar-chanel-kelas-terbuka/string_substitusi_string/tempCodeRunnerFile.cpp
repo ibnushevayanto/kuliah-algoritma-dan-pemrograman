@@ -1,0 +1,1 @@
+kalimat_1
