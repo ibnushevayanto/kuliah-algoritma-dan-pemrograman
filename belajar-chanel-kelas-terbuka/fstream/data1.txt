@@ -1,0 +1,9 @@
+ini adalah file external.
+dan ini adalah baris ke-dua
+
+data
+No  Nama
+1   Ibnu
+2   Gempi
+3   Gisel
+4   Gading
