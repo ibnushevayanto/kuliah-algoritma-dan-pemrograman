@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 
 struct Mahasiswa
 {
@@ -6,28 +7,33 @@ struct Mahasiswa
     std::string kelas;
 };
 
-void newLine()
-{
-    std::cout << std::endl;
-}
-
 int main()
 {
-    Mahasiswa daftar_mahassiwa[3];
+    Mahasiswa daftar_mahasiswa[2];
+    int index = 0;
 
-    std::cout << "Masukkan nama mahasiswa : ";
-    std::cin >> daftar_mahassiwa[0].nama;
+    std::cout << "Input Mahasiswa : \n";
 
-    std::cout << "Masukkan kelas mahasiswa : ";
-    std::cin >> daftar_mahassiwa[0].kelas;
-
-    for (size_t i = 0; i < 3; i++)
-    {   
-        std::cout << "Nama : " << daftar_mahassiwa[i].nama << std::endl;
-        std::cout << "Kelas : " << daftar_mahassiwa[i].kelas << std::endl << std::endl;
+    for (Mahasiswa mahasiswa : daftar_mahasiswa)
+    {
+        std::cout << "Nama : ";
+        std::cin >> daftar_mahasiswa[index].nama;
+        std::cout << "Kelas : ";
+        std::cin >> daftar_mahasiswa[index].kelas;
+        std::cout << std::endl
+                  << std::endl;
+        index++;
     }
-    
 
+    index = 0;
+    std::cout << "Daftar Mahasiswa : \n";
+    for (Mahasiswa mahasiswa : daftar_mahasiswa)
+    {
+        std::cout << "Nama : " << daftar_mahasiswa[index].nama << std::endl
+                  << "Kelas :" << daftar_mahasiswa[index].kelas << std::endl
+                  << std::endl;
+        index++;
+    }
 
-    return 1;
+    getch();
 }

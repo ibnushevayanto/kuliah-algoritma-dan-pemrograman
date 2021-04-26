@@ -2,7 +2,6 @@
 
 int main()
 {
-
     /**
      * Array Satu Dimensi
      */
@@ -26,5 +25,20 @@ int main()
         }
     }
 
+    /**
+     * Array Tiga Dimensi
+     */
+    int tabel[2][4][2] = {{{1, 2}, {3, 4}, {5, 6}, {7, 8}}, {{9, 10}, {11, 12}, {13, 14}, {15, 16}}};
+
+    for (int indexBaris = 0; indexBaris < 2; indexBaris++)
+    {
+        for (int indexKolom = 0; indexKolom < 4; indexKolom++)
+        {
+            for (int indexDalam = 0; indexDalam < 2; indexDalam++)
+            {
+                std::cout << tabel[indexBaris][indexKolom][indexDalam] << std::endl;
+            }
+        }
+    }
     return 1;
 }

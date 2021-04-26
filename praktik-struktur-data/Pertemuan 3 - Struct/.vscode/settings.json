@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "*.bin": "powershell",
-        "iostream": "cpp",
-        "istream": "cpp",
-        "iosfwd": "cpp",
-        "*.tcc": "cpp"
-    }
-}
